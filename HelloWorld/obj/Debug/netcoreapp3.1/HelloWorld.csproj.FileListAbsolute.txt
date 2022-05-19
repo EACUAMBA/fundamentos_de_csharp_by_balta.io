@@ -1,0 +1,13 @@
+D:\workspace\csharp\fundamentos_de_csharp\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.exe
+D:\workspace\csharp\fundamentos_de_csharp\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.deps.json
+D:\workspace\csharp\fundamentos_de_csharp\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.runtimeconfig.json
+D:\workspace\csharp\fundamentos_de_csharp\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.runtimeconfig.dev.json
+D:\workspace\csharp\fundamentos_de_csharp\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.dll
+D:\workspace\csharp\fundamentos_de_csharp\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.pdb
+D:\workspace\csharp\fundamentos_de_csharp\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.csprojAssemblyReference.cache
+D:\workspace\csharp\fundamentos_de_csharp\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.AssemblyInfoInputs.cache
+D:\workspace\csharp\fundamentos_de_csharp\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.AssemblyInfo.cs
+D:\workspace\csharp\fundamentos_de_csharp\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.csproj.CoreCompileInputs.cache
+D:\workspace\csharp\fundamentos_de_csharp\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.dll
+D:\workspace\csharp\fundamentos_de_csharp\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.pdb
+D:\workspace\csharp\fundamentos_de_csharp\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.genruntimeconfig.cache
