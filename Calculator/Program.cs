@@ -11,7 +11,8 @@ namespace Calculator
             Console.ReadKey();// Isto serve para previnir o programa de fechar após executar as instruções.
         }
 
-        static void Menu(){
+        static void Menu()
+        {
             Console.Clear();
 
             Console.WriteLine("Cardápio");
@@ -19,38 +20,53 @@ namespace Calculator
             Console.WriteLine("2 - Subtração");
             Console.WriteLine("3 - Multiplicação");
             Console.WriteLine("4 - Divisão");
+            Console.WriteLine("5 - Sair");
             Console.WriteLine();
 
             Console.WriteLine("Selecione uma opção:");
             int itemMenuSelected = int.Parse(Console.ReadLine());
 
-            switch(itemMenuSelected){
-                case(1):{
-                    Soma();
-                    break;
-                }
-                case(2):{
-                    Subtracao();
-                    break;
-                }
-                case(3):{
-                    Multiplicacao();
-                    break;
-                }
-                case(4):{
-                    Divisao();
-                    break;
-                }
-                default: {
-                    Console.WriteLine("O valor introduzido não é válido!");
-                    break;
-                }
+            switch (itemMenuSelected)
+            {
+                case (1):
+                    {
+                        Soma();
+                        break;
+                    }
+                case (2):
+                    {
+                        Subtracao();
+                        break;
+                    }
+                case (3):
+                    {
+                        Multiplicacao();
+                        break;
+                    }
+                case (4):
+                    {
+                        Divisao();
+                        break;
+                    }
+                case (5):
+                    {
+                        System.Environment.Exit(0);
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("O valor introduzido não é válido!");
+                        break;
+                    }
             }
 
-
+            Console.WriteLine("Ir para o menu?");
+            Console.ReadLine();
+            Menu();
         }
 
-        static void Multiplicacao(){
+        static void Multiplicacao()
+        {
             Console.Clear();
 
             Console.WriteLine("Primeiro valor:");
@@ -66,7 +82,8 @@ namespace Calculator
 
         }
 
-        static void Divisao(){
+        static void Divisao()
+        {
             Console.Clear();
 
             Console.WriteLine("Primeiro valor:");
@@ -80,9 +97,10 @@ namespace Calculator
             float resultado = v1 / v2;
             Console.WriteLine($"O resultado da divisão {v1}/{v2} é {resultado}");
         }
-        static void Subtracao(){
+        static void Subtracao()
+        {
             Console.Clear();
-            
+
             Console.WriteLine("Primeiro valor:");
             float v1 = float.Parse(Console.ReadLine());
 
@@ -91,9 +109,9 @@ namespace Calculator
 
             Console.WriteLine();
 
-            float resultado = v1-v2;
+            float resultado = v1 - v2;
             Console.WriteLine($"O resultado da subtração entre {v1} e {v2} é {resultado}");
-            
+
         }
         static void Soma()
         {
