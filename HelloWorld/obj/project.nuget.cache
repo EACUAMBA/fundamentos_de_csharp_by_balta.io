@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/tpg5cr0CkRrL1w8MDcbIHBeR0d34bjaExZodwKYKSKy89Vc2BOJzUD2fx7GY2F+/91cVvPdUlJCrXuQYhb8zA==",
+  "dgSpecHash": "H3aO7WTyzhSAv4gRxupMAfYUpVSV+Xi3WNNt0ISu1gnW3BzsGLUm7+7mcOeqkR5nrK9TDTNLOvEZzog0Oeri2Q==",
   "success": true,
-  "projectFilePath": "D:\\workspace\\csharp\\fundamentos_de_csharp\\HelloWorld\\HelloWorld.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\workspace\\_learning\\fundamentos_de_csharp_by_balta.io\\HelloWorld\\HelloWorld.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eacuamba\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\eacuamba\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\eacuamba\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\eacuamba\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }
