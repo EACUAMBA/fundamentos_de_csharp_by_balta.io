@@ -1,5 +1,5 @@
-﻿using System; //Importando o System para termos algumas classes como Console;
-
+﻿using System;
+using Strategy;
 namespace Calculator
 {
     class Calculator
@@ -24,28 +24,29 @@ namespace Calculator
             Console.WriteLine();
 
             Console.WriteLine("Selecione uma opção:");
-            int itemMenuSelected = int.Parse(Console.ReadLine());
+            int itemMenuSelected = int.Parse(Console.ReadLine()!);
+            OperationContext oc = new OperationContext();
 
             switch (itemMenuSelected)
             {
                 case (1):
                     {
-                        Soma();
+                        oc.Operation = new SumStrategy();
                         break;
                     }
                 case (2):
                     {
-                        Subtracao();
+                        oc.Operation = new SubstractionStrategy();
                         break;
                     }
                 case (3):
                     {
-                        Multiplicacao();
+                        oc.Operation = new MultiplicationStrategy();
                         break;
                     }
                 case (4):
                     {
-                        Divisao();
+                       oc.Operation = new DivisionStrategy();
                         break;
                     }
                 case (5):
@@ -60,73 +61,19 @@ namespace Calculator
                     }
             }
 
+            Console.WriteLine("Primeiro valor:");
+            double v1 = Convert.ToDouble(Console.ReadLine()!);
+
+            Console.WriteLine("Segundo valor:");
+            double v2 = double.Parse(Console.ReadLine()!);
+
+            double? result = oc.PerformCalc(v1, v2);
+
+            Console.WriteLine($"O resultado da multiplicação entre {v1} x {v2} é {result}");
+
             Console.WriteLine("Ir para o menu?");
             Console.ReadLine();
             Menu();
-        }
-
-        static void Multiplicacao()
-        {
-            Console.Clear();
-
-            Console.WriteLine("Primeiro valor:");
-            float v1 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("Segundo valor:");
-            float v2 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine();
-
-            float resultado = v1 * v2;
-            Console.WriteLine($"O resultado da multiplicação entre {v1} x {v2} é {resultado}");
-
-        }
-
-        static void Divisao()
-        {
-            Console.Clear();
-
-            Console.WriteLine("Primeiro valor:");
-            float v1 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("Segundo valor:");
-            float v2 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine();
-
-            float resultado = v1 / v2;
-            Console.WriteLine($"O resultado da divisão {v1}/{v2} é {resultado}");
-        }
-        static void Subtracao()
-        {
-            Console.Clear();
-
-            Console.WriteLine("Primeiro valor:");
-            float v1 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("Segundo valor:");
-            float v2 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine();
-
-            float resultado = v1 - v2;
-            Console.WriteLine($"O resultado da subtração entre {v1} e {v2} é {resultado}");
-
-        }
-        static void Soma()
-        {
-            Console.Clear();
-            Console.WriteLine("Primeiro valor:");
-            float v1 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("Segundo valor:");
-            float v2 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine();
-
-            float resultado = v1 + v2;
-            Console.WriteLine($"O resultado da soma de {v1} e {v2} é {resultado}");// Esta abordagem é chamada de interpolação de Strings, iniciamos uma cadeia de caracteres com o $ (cifrão) e depois podemos utilizar {} (entre chavetas o nome da variável ou uma instrução completa).
-
         }
     }
 
