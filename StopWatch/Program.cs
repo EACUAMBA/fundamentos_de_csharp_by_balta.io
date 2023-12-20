@@ -10,11 +10,22 @@ static void Menu()
     Console.WriteLine("Quanto tempo deseja contar?");
 
     string data = Console.ReadLine().ToLower();
+    if(data == "0")
+    {
+        System.Environment.Exit(0);
+    }
     char type = char.Parse(data.Substring(data.Length - 1, 1));
     int time = int.Parse(data.Substring(0, data.Length - 1));
+    int multiplier = 1;
 
-    Console.WriteLine(time);
+    if(type == 'm')
+    {
+        multiplier = 60;
+    }
 
+    
+
+    Start(time * multiplier);
 }
 
 Menu();
@@ -34,6 +45,7 @@ static void Start(int time)
     Console.Clear();
     Console.WriteLine("StopWatch ended!");
     Thread.Sleep(25000);
+    Menu();
 }
 
 //Start(6);
