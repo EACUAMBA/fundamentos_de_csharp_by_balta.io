@@ -25,10 +25,21 @@ static void Menu()
 
     
 
-    Start(time * multiplier);
+    PreStart(time * multiplier);
 }
 
 Menu();
+
+static void PreStart(int time){
+    Console.Clear();
+    Console.WriteLine("Ready");
+    Thread.Sleep(1000);
+    Console.WriteLine("Set");
+    Thread.Sleep(1000);
+    Console.WriteLine("Go");
+    Thread.Sleep(1000);
+    Start(time);
+}
 
 static void Start(int time)
 {
@@ -47,5 +58,3 @@ static void Start(int time)
     Thread.Sleep(25000);
     Menu();
 }
-
-//Start(6);
