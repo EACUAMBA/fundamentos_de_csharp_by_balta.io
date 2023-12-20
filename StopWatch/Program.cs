@@ -1,7 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-static void Menu(){
+static void Menu()
+{
     Console.Clear();
     Console.WriteLine("S = Segundo => 10s -> 10 segundos");
     Console.WriteLine("M = Minuto => 10m-> 10 minutos");
@@ -9,7 +10,8 @@ static void Menu(){
     Console.WriteLine("Quanto tempo deseja contar?");
 
     string data = Console.ReadLine().ToLower();
-    Console.WriteLine(data);
+    char type = char.Parse(data.Substring(data.Length - 1, 1));
+    Console.WriteLine(type);
 }
 
 Menu();
